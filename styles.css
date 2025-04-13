@@ -28,6 +28,7 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -37,34 +38,50 @@ body {
 }
 
 .hero {
-  background: linear-gradient(to right, #0057b8, #002c59);
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 44, 89, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
-  padding: 80px 20px;
   text-align: center;
+}
+
+.overlay h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.overlay p {
+  font-size: 18px;
 }
 
 .section {
   padding: 60px 20px;
   background-color: white;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ddd;
 }
 
 .section h2 {
   color: #002c59;
-  margin-bottom: 10px;
-}
-
-.gallery {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  width: 200px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px #aaa;
 }
 
 .footer {

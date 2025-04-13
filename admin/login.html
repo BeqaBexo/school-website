@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ადმინის ავტორიზაცია</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="header"><div class="container"><h1 class="logo">ადმინი - შესვლა</h1></div></header>
+  <section class="section"><div class="container">
+    <form onsubmit="return login(event)">
+      <input type="text" id="username" placeholder="მომხმარებელი" required><br><br>
+      <input type="password" id="password" placeholder="პაროლი" required><br><br>
+      <button type="submit">შესვლა</button>
+    </form>
+    <p id="login-msg" style="color: red;"></p>
+  </div></section>
+  <script>
+    function login(event) {
+      event.preventDefault();
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      if(user === 'admin' && pass === 'school123') {
+        window.location.href = 'dashboard.html';
+      } else {
+        document.getElementById('login-msg').textContent = 'შეცდომა: არასწორი მონაცემები';
+      }
+    }
+  </script>
+</body>
+</html>
