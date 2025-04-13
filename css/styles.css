@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
+
+/* General */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Noto Serif Georgian', serif;
     margin: 0;
     padding: 0;
     background: #fdf8f3 url('../images/bg.jpg') repeat;
     color: #3b1d1d;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
-
+/* Header */
 .main-header {
     background: url('../images/bg-texture.jpg') repeat;
     padding: 20px 40px;
-    font-family: 'Noto Serif Georgian', serif;
     font-size: 18px;
 }
 
@@ -64,20 +64,7 @@ body {
         transform: scale(1.1);
     }
 
-
-.nav-links a {
-    color: #7d2e2e;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-    .nav-links a:hover {
-        color: #d15500;
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-    }
-
+/* Hero Section */
 .hero-bg {
     background: url('../images/slide1.jpg') center center/cover no-repeat;
     height: 800px;
@@ -106,6 +93,7 @@ body {
         margin-top: 10px;
     }
 
+/* Main Content */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +114,7 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Post Styling */
 .post {
     background: white;
     margin-bottom: 20px;
@@ -161,6 +150,7 @@ body {
         background: #e65100;
     }
 
+/* Footer */
 footer {
     background: #591d1d;
     color: white;
@@ -190,25 +180,19 @@ footer {
     }
 }
 
-@keyframes slide-in {
-    0% {
-        transform: translateX(-30px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
 
-    .nav-links a {
-        margin-left: 10px;
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .search-icon {
+        margin-top: 10px;
     }
 }
