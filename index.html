@@ -2,50 +2,40 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ლეწავეს საჯარო სკოლა</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ლეცავეს საჯარო სკოლა</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="logo">ლეწავეს საჯარო სკოლა</h1>
-      <nav class="nav">
+      <div class="logo">ლეცავეს საჯარო სკოლა</div>
+      <nav class="nav" id="mainNav">
         <ul>
           <li><a href="index.html">მთავარი</a></li>
-          <li><a href="teachers.html">მასწავლებლები</a></li>
-          <li><a href="admission.html">მიღების წესები</a></li>
-          <li><a href="gallery.html">გალერეა</a></li>
-          <li><a href="contact.html">კონტაქტი</a></li>
-          <li><a href="admin/login.html">🔐 Admin</a></li>
+          <li><a href="pages/teachers.html">მასწავლებლები</a></li>
+          <li><a href="pages/admission.html">მიღება</a></li>
+          <li><a href="pages/gallery.html">გალერეა</a></li>
+          <li><a href="pages/contact.html">კონტაქტი</a></li>
         </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <img src="images/cover.jpg" alt="სკოლის შენობა" class="cover-img">
+    <div class="slider">
+      <img src="images/slide1.jpg" class="slide active" />
+      <img src="images/slide2.jpg" class="slide" />
+      <img src="images/slide3.jpg" class="slide" />
+    </div>
     <div class="overlay">
-      <h2>მოგესალმებით ლეწავეს საჯარო სკოლაში</h2>
-      <p>საგანმანათლებლო ტრადიციებით სავსე სივრცე</p>
+      <h1>მოგესალმებით ლეცავეს საჯარო სკოლაში</h1>
+      <p>განათლების ადგილი, სადაც მომავალს ვაშენებთ ერთად</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container">
-      <h2>სიახლეები</h2>
-      <ul>
-        <li>📌 ახალი სასწავლო წლის დაწყება - 15 სექტემბერი</li>
-        <li>🎓 მეთორმეტე კლასის გამოსაშვები საღამო - 5 ივნისი</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 ლეწავეს საჯარო სკოლა. ყველა უფლება დაცულია.</p>
-    </div>
-  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
