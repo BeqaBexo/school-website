@@ -7,10 +7,41 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <header class="header"><div class="container"><h1 class="logo">ადმინის დაფა</h1></div></header>
-  <section class="section"><div class="container">
-    <h2>მოგესალმებით, ადმინ!</h2>
-    <p>აქ შეგიძლია ატვირთო ფოტოები ან დაამატო ახალი სტატია (ფუნქციონალი შემდგომ დაემატება).</p>
-  </div></section>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">ადმინის დაფა</h1>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <h2>ახალი სტატიის დამატება</h2>
+      <form id="articleForm">
+        <input type="text" id="title" placeholder="სათაური" required><br><br>
+        <textarea id="content" placeholder="ტექსტი..." rows="5" required></textarea><br><br>
+        <button type="submit">დამატება</button>
+      </form>
+      <h3>დამატებული სტატიები (ლოკალურად):</h3>
+      <ul id="articleList"></ul>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('articleForm');
+    const list = document.getElementById('articleList');
+    const articles = [];
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const title = document.getElementById('title').value.trim();
+      const content = document.getElementById('content').value.trim();
+      if (title && content) {
+        articles.push({ title, content });
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${title}</strong><br>${content}`;
+        list.appendChild(li);
+        form.reset();
+      }
+    });
+  </script>
 </body>
 </html>
