@@ -3,16 +3,60 @@
 <html lang="ka">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ლეცავეს საჯარო სკოლა</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header><h1>ლეცავეს საჯარო სკოლა</h1></header>
-  <section class="slider">
-    <img class="slide" src="images/slide1.jpg" />
-    <img class="slide" src="images/slide2.jpg" />
-    <img class="slide" src="images/slide3.jpg" />
+  <header class="header">
+    <div class="container">
+      <div class="logo">ლეცავეს საჯარო სკოლა</div>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">მთავარი</a></li>
+          <li><a href="pages/teachers.html">მასწავლებლები</a></li>
+          <li><a href="pages/admission.html">მიღება</a></li>
+          <li><a href="pages/gallery.html">გალერეა</a></li>
+          <li><a href="pages/contact.html">კონტაქტი</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slider">
+      <img src="images/slide1.jpg" class="slide active" />
+      <img src="images/slide2.jpg" class="slide" />
+      <img src="images/slide3.jpg" class="slide" />
+    </div>
+    <div class="overlay">
+      <h1>მოგესალმებით ლეცავეს საჯარო სკოლაში</h1>
+      <p>სკოლა, სადაც მომავალს ერთად ვაშენებთ</p>
+      <a href="pages/admission.html" class="btn">იხილე დეტალურად</a>
+    </div>
   </section>
+
+  <section class="welcome container">
+    <h2>ჩვენ შესახებ</h2>
+    <p>ლეცავეს საჯარო სკოლა გთავაზობთ თანამედროვე განათლებას, პროფესიონალი მასწავლებლების გუნდით და მეგობრულ გარემოში სწავლის შესაძლებლობით.</p>
+    <p>ჩვენი სკოლა მიზნად ისახავს მოსწავლეთა ინდივიდუალურ განვითარებასა და ინოვაციური მიდგომების დანერგვას სასწავლო პროცესში.</p>
+  </section>
+
+  <section class="news container">
+    <h2>სიახლეები</h2>
+    <ul>
+      <li>📅 ახალი სასწავლო წლის დაწყება — 2025 წლის 15 სექტემბერი</li>
+      <li>🎉 მეთორმეტე კლასის გამოსაშვები ღონისძიება — ივნისის დასაწყისში</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 ლეცავეს საჯარო სკოლა • ყველა უფლება დაცულია</p>
+    </div>
+  </footer>
+
   <script src="js/main.js"></script>
 </body>
 </html>
