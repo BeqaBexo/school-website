@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+
+body {
+    font-family: 'Noto Serif Georgian', serif;
+    margin: 0;
+    background: #fdf8f3 url('../images/bg-texture.jpg') repeat;
+    color: #3b1d1d;
+}
+
+.main-header {
+    background: #fff4e6;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #5e1f1f;
+}
+
+.nav-menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4b1e1e;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        color: #e37400;
+    }
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+    .hero h1 {
+        font-size: 36px;
+        color: #6a1b1b;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        color: #7d2e2e;
+    }
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.rule-section {
+    margin-bottom: 40px;
+}
+
+    .rule-section h2 {
+        font-size: 28px;
+        color: #5e1f1f;
+        margin-bottom: 15px;
+    }
+
+    .rule-section h3 {
+        font-size: 22px;
+        color: #7a2c2c;
+        margin-top: 20px;
+    }
+
+    .rule-section ul {
+        list-style-type: decimal;
+        padding-left: 25px;
+        color: #4b1e1e;
+    }
+
+    .rule-section li {
+        margin-bottom: 12px;
+        line-height: 1.7;
+    }
