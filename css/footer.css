@@ -1,0 +1,21 @@
+/* IMPORT FONT + ICONS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+footer {
+    background: #591d1d;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    footer div {
+        min-width: 150px;
+    }
+
+        footer div h3 {
+            border-bottom: 2px solid white;
+            margin-bottom: 10px;
+        }
