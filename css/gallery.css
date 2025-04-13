@@ -8,32 +8,6 @@ body {
     color: #3b1d1d;
 }
 
-.main-header {
-    background: url('../images/bg-texture.jpg') repeat;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #5e1f1f;
-}
-
-.nav-menu a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #4b1e1e;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-    .nav-menu a:hover,
-    .nav-menu a.active {
-        color: #e37400;
-    }
 
 .title {
     text-align: center;
