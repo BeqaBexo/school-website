@@ -1,6 +1,17 @@
+/* IMPORT FONT + ICONS */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+/* GENERAL RESET */
+body {
+    font-family: 'Noto Serif Georgian', serif;
+    margin: 0;
+    padding: 0;
+    background: #fdf8f3 url('../images/bg.jpg') repeat;
+    color: #3b1d1d;
+}
+
+/* HEADER STYLES */
 .main-header {
     background: url('../images/bg-texture.jpg') repeat;
     padding: 20px 40px;
@@ -14,6 +25,7 @@
     gap: 30px;
 }
 
+/* LOGO TEXT */
 .logo {
     color: #5e1f1f;
     font-size: 28px;
@@ -21,6 +33,7 @@
     white-space: nowrap;
 }
 
+/* NAVIGATION MENU */
 .nav-menu {
     display: flex;
     gap: 35px;
@@ -40,6 +53,7 @@
             color: #e37400;
         }
 
+/* SEARCH ICON */
 .search-icon {
     width: 40px;
     height: 40px;
@@ -57,3 +71,22 @@
     .search-icon:hover {
         transform: scale(1.1);
     }
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .search-icon {
+        margin-top: 10px;
+    }
+}
