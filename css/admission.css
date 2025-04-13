@@ -56,22 +56,18 @@ body {
     .admission-section h2 {
         font-size: 22px;
         color: #5e1f1f;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
-    .admission-section ol {
-        padding-left: 20px;
-        line-height: 1.8;
-        color: #3b1d1d;
+    .admission-section p,
+    .admission-section li {
         font-size: 17px;
+        line-height: 1.7;
+        color: #3b1d1d;
     }
 
-    .admission-section ul {
-        padding-left: 40px;
+    .admission-section ul,
+    .admission-section ol {
         margin-top: 10px;
+        padding-left: 30px;
     }
-
-        .admission-section ul li {
-            margin-bottom: 10px;
-            color: #4a1e1e;
-        }
