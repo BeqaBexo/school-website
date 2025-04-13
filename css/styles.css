@@ -67,7 +67,7 @@ body {
 /* Hero Section */
 .hero-bg {
     background: url('../images/slide1.jpg') center center/cover no-repeat;
-    height: 200px;
+    height: 160px;
     position: relative;
 }
 
